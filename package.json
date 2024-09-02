@@ -1,0 +1,78 @@
+{
+  "name": "fitknock-ui-kit",
+  "version": "1.0.4",
+  "description": "A customizable React UI component library for building user interfaces quickly and efficiently.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "React UI Library",
+    "UI Components",
+    "Customizable Components",
+    "React Components",
+    "FitKnock UI",
+    "Component Library",
+    "React UI Kit",
+    "Theming in React",
+    "React ThemeProvider",
+    "Theme Switcher",
+    "React Button Component",
+    "React Textbox Component",
+    "React Card Component",
+    "React Checkbox Component",
+    "React Dropdown Component",
+    "React Date Picker",
+    "React Snackbar",
+    "React Spinner",
+    "React Icon Component",
+    "React RadioButton",
+    "Frontend Development",
+    "UI Kit for React",
+    "Modern UI Components",
+    "NPM UI Package"
+  ],
+  "contributors": [
+    {
+      "name": "Godwin",
+      "email": "godwin6602@gmail.com",
+      "url": "https://github.com/godwin2906"
+    },
+    {
+      "name": "Sivaprakash",
+      "email": "sivaprakash138@gmail.com",
+      "url": "https://github.com/im-sivaprakash"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pirates-Corp/fitknock-ui-kit"
+  },
+  "homepage": "https://github.com/Pirates-Corp/fitknock-ui-kit#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rollup": "rollup -c --bundleConfigAsCjs"
+  },
+  "author": "godwin sivaprakash",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "react": "^18.3.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-sass": "^1.13.2",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "sass": "^1.77.8",
+    "tslib": "^2.7.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@types/react": "^18.3.5",
+    "react-select": "^5.8.0",
+    "rollup": "^4.21.2",
+    "sass-loader": "^12.3.0"
+  }
+}

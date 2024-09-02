@@ -1,0 +1,304 @@
+.modeSwitch {
+  border-radius: 50%;
+  background: none;
+  border: none;
+}
+
+.modeSwitch:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media (max-width: 520px) {
+  .modeSwitch svg {
+    width: 18px;
+    height: 18px;
+  }
+}@media (max-width: 520px) {
+  .textboxContainer {
+    width: 100% !important;
+  }
+}
+.textboxContainer {
+  width: fit-content;
+  margin-top: 1.5rem;
+}
+.textboxContainer label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: block;
+}
+.textboxContainer input {
+  font-family: var(--font-family);
+  padding: 0.8rem 1.6rem;
+  width: 30rem;
+}
+.textboxContainer input[type=text] {
+  border: none;
+  border: 1.2px solid #959292;
+  border-radius: 0.6rem;
+}
+
+.textboxContainer {
+  width: fit-content;
+  margin-top: 1.5rem;
+}
+.textboxContainer label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: block;
+}
+.textboxContainer input {
+  font-family: var(--font-family);
+  padding: 0.8rem 1.6rem;
+  width: 30rem;
+}
+.textboxContainer input[type=password] {
+  border: none;
+  border: 1.2px solid #959292;
+  border-radius: 0.6rem;
+}@media (max-width: 520px) {
+  .textboxContainer {
+    width: 100% !important;
+  }
+}
+.textboxContainer {
+  width: fit-content;
+  margin-top: 1.5rem;
+}
+.textboxContainer label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: block;
+}
+.textboxContainer input {
+  font-family: var(--font-family);
+  padding: 0.8rem 1.6rem;
+  width: 30rem;
+}
+.textboxContainer input[type=date] {
+  border: none;
+  border: 1.2px solid #959292;
+  border-radius: 0.6rem;
+}
+
+.dateBoxContainerDark input[type=date]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.dateBoxContainerLight input[type=date]::-webkit-calendar-picker-indicator {
+  filter: invert(0);
+}/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-family: var(--font-family);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: fit-content;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #a7a5a5;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #3185f9;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 6px;
+  top: 2.5px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (max-width: 520px) {
+  .container {
+    font-size: 14px;
+  }
+}/*-----------------------
+        Animations
+-------------------------*/
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 200%, 0);
+  }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 0.5s;
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 0.5s;
+}
+
+/*-------------------------*/
+.sanckBarContainer {
+  position: absolute;
+  z-index: 3000;
+  top: 10%;
+  left: 0;
+  right: 0;
+  height: 6rem;
+  width: fit-content;
+  margin: auto;
+  border-radius: 50px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+}
+.sanckBarContainer p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 450px) {
+  .sanckBarContainer {
+    padding: 1rem;
+    height: fit-content;
+  }
+}.card {
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}.callToActionBtn {
+  color: white;
+  border: none;
+  padding: 1.6rem 2.4rem;
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  width: 14rem;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.baseButton {
+  width: 13rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-family: var(--font-family);
+  transition: box-shadow 0.3s;
+}
+
+@media (max-width: 990px) {
+  .baseButton {
+    width: 12rem;
+    height: 3.6rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 660px) {
+  .baseButton {
+    width: 9rem;
+    height: 3.6rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 486px) {
+  .baseButton {
+    width: 8rem;
+    height: 3.6rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 420px) {
+  .baseButton {
+    width: 7rem;
+    height: 3.6rem;
+    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+}.dropDowncontainerClass {
+  width: fit-content;
+  margin-top: 0.5rem;
+}
+.dropDowncontainerClass label {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}

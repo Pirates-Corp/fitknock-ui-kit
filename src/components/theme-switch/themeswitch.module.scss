@@ -1,0 +1,17 @@
+.modeSwitch {
+  border-radius: 50%;
+  background: none;
+  border: none;
+}
+
+.modeSwitch:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media (max-width: 520px) {
+  .modeSwitch svg {
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../styles/inputboxmixin.scss';
+
+$textbox-width: 200px;
+
+@include inputBox('date');
+
+.dateBoxContainerDark {
+  input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+}
+
+.dateBoxContainerLight {
+  input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(0);
+  }
+}

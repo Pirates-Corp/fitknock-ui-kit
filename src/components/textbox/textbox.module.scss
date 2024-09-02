@@ -1,0 +1,6 @@
+@import '../../styles/inputboxmixin.scss';
+
+$textbox-width: 500px;
+
+@include inputBox('text');
+@include inputBox('password');

@@ -1,0 +1,20 @@
+.loading {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid #ddd;
+  border-top-color: rgb(240, 200, 41);
+  color: hwb(210 68% 26% / 0.637);
+  animation: loading 1s linear infinite;
+  /* background-color: aqua; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+@keyframes loading {
+  to {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}

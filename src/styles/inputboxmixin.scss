@@ -1,0 +1,31 @@
+$textbox-width: 200px;
+
+@mixin inputBox($type) {
+  .textboxContainer {
+    width: fit-content;
+    margin-top: 1.5rem;
+
+    label {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    input {
+      font-family: var(--font-family);
+      padding: 0.8rem 1.6rem;
+      width: 30rem;
+      &[type="#{$type}"] {
+        border: none;
+        border: 1.2px solid #959292;
+        border-radius: 0.6rem;
+      }
+    }
+  }
+}
+@media (max-width: 520px) {
+  .textboxContainer {
+    width: 100% !important;
+  }
+}
